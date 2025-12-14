@@ -69,6 +69,40 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  position: relative;
+  animation: scroll 20s linear infinite;
+}
+
+.marquee__item {
+  min-width: 200px;
+  margin: 0 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.marquee__track_duplicate{
+  display: flex;
+  width: max-content;
+
+}
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 /* Navigation */
 .nav-bar {
@@ -127,12 +161,13 @@ body {
 
 /* Photo box */
 .photo-box {
-  height: 40vh;
+  overflow: hidden;
+  /* height: 40vh;
   background-color: #0044aa;
   border: 2px solid #000;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   color: white;
   font-weight: bold;
   font-size: 24px;
@@ -146,4 +181,50 @@ body {
 .side-box li a {
     text-decoration: none;
     color: #000;
+}
+
+/* People  */
+.people_table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.container{
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.people_rows{
+    padding: 1rem;
+    border: 1px solid #000;
+    text-align: center;
+}
+.people_rows.link{
+  padding: 0;
+}
+.people_rows a img{
+    width: 30px;
+}
+
+
+
+.events .containerHead{
+  margin: 40px auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.events  input.date-picker{
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 0.7rem;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.events .events_contents{
+}
+.events .event_box{
+  padding: 1rem;
 }

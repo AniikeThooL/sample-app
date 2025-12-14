@@ -1,0 +1,149 @@
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #495057;
+  margin-bottom: 60px;
+}
+
+.containerHead{
+  margin: 40px auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.containerHead select{
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #495057;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.teamCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.teamCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.teamCard:hover .image {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 107, 53, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.teamCard:hover .overlay {
+  opacity: 1;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background: white;
+  color: #ff6b35;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 20px 16px 8px;
+}
+
+.role {
+  font-size: 14px;
+  color: #ff6b35;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.bio {
+  font-size: 14px;
+  color: #495057;
+  padding: 0 16px 20px;
+  line-height: 1.5;
+}
+
+#activity .carouselContainer{
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .teamGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+  }
+}

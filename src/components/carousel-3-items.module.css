@@ -1,0 +1,164 @@
+.carouselContainer {
+  width: min(700px, 100%);
+  margin: 0 auto;
+}
+
+.carouselWrapper {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.slidesTrack {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 calc(100%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  position: relative;
+  background: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* home page: change image height from here */
+.slideImage {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  display: block;
+}
+
+.slideOverlay {
+  padding: 20px;
+}
+
+
+.slideTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.slideSubtitle {
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.navButton:hover {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 12px 18px;
+}
+
+.prev {
+  left: 12px;
+}
+
+.next {
+  right: 12px;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background: #999;
+}
+
+.dot.activeDot {
+  background: #000;
+  width: 28px;
+  border-radius: 5px;
+}
+
+.slideCounter {
+  text-align: center;
+  padding: 12px;
+  background: white;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.emptyCarousel {
+  padding: 60px 20px;
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    flex: 0 0 calc(30%);
+  }
+}
+
+@media (max-width: 768px) {
+  .carouselContainer {
+    padding: 20px 0;
+  }
+
+  .carouselWrapper {
+    border-radius: 0;
+  }
+
+
+  .slide {
+    flex: 0 0 calc(100% - 12px);
+  }
+
+  .navButton {
+    padding: 10px 14px;
+    font-size: 20px;
+  }
+
+  .dotsContainer {
+    gap: 6px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dot.activeDot {
+    width: 24px;
+  }
+}
