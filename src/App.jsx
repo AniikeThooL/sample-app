@@ -12,34 +12,28 @@ const view = window.innerHeight<window.innerWidth?"web":"mobile";
 function App() {
   const carouselItems = [
     {
-      image: "https://picsum.photos/500/600",
+      image: "/DeekshaBhoomi.jpg",
       title: "Daily App - Task Management",
-      description: "Increasing your productivity with smart task scheduling",
     },
     {
-      image: "https://picsum.photos/500/600",
+      image: "/ChaityaBhoomi.jpg",
       title: "Daily App - User Interface",
-      description: "Increasing your productivity with intuitive design",
     },
     {
-      image: "https://picsum.photos/500/600",
+      image: "/ChaityaBhoomi_gate.jpg",
       title: "Daily App - Orange Theme",
-      description: "Increasing your productivity with vibrant colors",
     },
     {
-      image: "https://picsum.photos/500/600",
+      image: "/Pagoda_temple.jpg",
       title: "Daily App - Dark Mode",
-      description: "Increasing your productivity with eye-friendly interface",
     },
     {
-      image: "https://picsum.photos/500/600",
+      image: "/Bhimakoregoan.jpg",
       title: "Daily App - Nature Theme",
-      description: "Increasing your productivity with organic design",
     },
     {
-      image: "https://picsum.photos/500/600",
+      image: "/home_img.jpg",
       title: "Daily App - Notifications",
-      description: "Increasing your productivity with smart notifications",
     },
   ]
 
@@ -51,7 +45,7 @@ function App() {
       {/* Top blue header */}
       <header className="top-header">
         <div className="logo-box">
-          <img src="/logo.jpg" alt="" />
+          <img src="/logo_left.jpg" alt="" />
         </div>
         <div className="title-box">
           <div className="subtitle">"बहुजन हिताय, बहुजन सुखाय"</div>
@@ -104,15 +98,8 @@ function App() {
             <div className="side-header" onClick={()=>setLinkOpen({left:!linksOpen.left,right:linksOpen.right})}>Link</div>
             <aside className={`side-box ${linksOpen.left || view=="web"?'open':'closed'}`}>
                 <ul>
-                  <li><a href="https://www.deekshabhoomi.org/" target='_blank'>Deeksha Bhumi Nagpur</a></li>
-                  <li><a href="?">Chaitybhumi Mumbai</a></li>
-                  <li><a href="?">Bihar</a></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li><a href="https://www.deekshabhoomi.org/" target='_blank'>Deeksha Bhumi, Nagpur</a></li>
+                  <li><a href="https://bodhgayatemple.com/" target='_blank'>Bodh Gaya, Bihar</a></li>                
                 </ul>
             </aside>
           </div>
@@ -144,14 +131,9 @@ function App() {
           <div className="side-header" onClick={()=>setLinkOpen({left:linksOpen.left,right:!linksOpen.right})}>Link</div>
           <aside className={`side-box ${linksOpen.right || view=="web"?'open':'closed'}`}>
             <ul>
-              <li><a href="?">Dragon Palace Kamptee</a></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li><a href="https://asi.nic.in/pages/WorldHeritageBuddhistMonumentsatSanchi" target='_blank'>Sachi Stupa, MP</a></li>
+              <li><a href="https://www.globalpagoda.org/" target='_blank'>Pagoda Temple, Mumbai </a></li>
+              {/* <li><a href="https://kushinagar.nic.in/tourist-place/mahanirvana-stupa/" target='_blank'>Kushinagar </a></li> */}
             </ul>
           </aside>
         </div>
@@ -164,7 +146,7 @@ function App() {
       <People/>
 
       {/* Events */}
-      <Events/>
+      {/* <Events/> */}
 
       {/* Gallery */}
       <Gallery/>

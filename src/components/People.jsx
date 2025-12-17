@@ -28,13 +28,13 @@ export const People = ()=>{
                             <a href="?"><img src="/file.png" alt="" /></a>
                         </td>
                     </tr>
-                    <tr>
+                    {/* <tr>
                         <td className="people_rows">4</td>
                         <td className="people_rows"></td>
                         <td className="people_rows link">
                             <a href="?"><img src="/file.png" alt="" /></a>
                         </td>
-                    </tr>
+                    </tr> */}
                 </tbody>
             </table>
         </div>

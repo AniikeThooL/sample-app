@@ -8,28 +8,28 @@ export function ActivitySection() {
       name: "Sarah Anderson",
       role: "Chief Executive Officer",
       bio: "Visionary leader with 20+ years in strategy and innovation",
-      image: "https://picsum.photos/400/500",
+      image: "/gallery_1.jpg",
     },
     {
       id: 2,
       name: "Michael Chen",
       role: "Chief Technology Officer",
       bio: "Tech innovator passionate about transforming businesses through technology",
-      image: "https://picsum.photos/400/500",
+      image: "/gallery_2.jpg",
     },
     {
       id: 3,
       name: "Emma Rodriguez",
       role: "Head of Operations",
       bio: "Operations expert committed to operational excellence and growth",
-      image: "https://picsum.photos/400/500",
+      image: "/gallery_3.jpg",
     },
     {
-      id: 4,
+      id: 5,
       name: "David Kumar",
       role: "Head of Marketing",
       bio: "Marketing strategist focused on building meaningful brand connections",
-      image: "https://picsum.photos/400/500",
+      image: "/gallery_5.jpg",
     },
   ]
 
