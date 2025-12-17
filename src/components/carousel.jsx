@@ -56,7 +56,7 @@ export default function Carousel3Items({ items = [], autoSlide = true, slideInte
         <div
           className={styles.slidesTrack}
           style={{
-            transform: `translateX(calc(-${current * 100}%))`,
+            transform: `translateX(calc(-${current * 100}% ))`,
             transition: current % items.length === 0 && current !== 0 ? "none" : "transform 0.6s ease-in-out",
           }}
         >

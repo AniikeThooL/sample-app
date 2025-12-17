@@ -27,11 +27,12 @@
 .contact_and_links{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 1rem;
 }
 
 .columnTitle {

@@ -5,6 +5,9 @@ import { About } from './components/About'
 import { People } from './components/People'
 import { Gallery } from './components/Gallery'
 import { Events } from './components/Events'
+import { useState } from 'react'
+
+const view = window.innerHeight<window.innerWidth?"web":"mobile";
 
 function App() {
   const carouselItems = [
@@ -40,6 +43,9 @@ function App() {
     },
   ]
 
+  const [menuOpen,setMenuOpen] = useState(false);
+  const [linksOpen,setLinkOpen] = useState({left:false,right:false});
+
   return (
     <div className="app">
       {/* Top blue header */}
@@ -66,7 +72,7 @@ function App() {
           <div className="marquee__item">* “अत्त दीप भव” *</div>
           <div className="marquee__item">“भवतु सब्ब”</div>
           
-          <div className="marquee__track_duplicate">
+          <div className="marquee__track_duplicate"> {/* create duplicate of the above element to shadow it behind for scrolling effect  */}
             <div className="marquee__item">* “बुद्धं शरणं गच्छामि  ।। धम्मं शरणं गच्छामि  ।। संघं शरणं गच्छामि” *</div>
             <div className="marquee__item">* “प्रज्ञा, शील, करुणा” *</div>
             <div className="marquee__item">* “अत्त दीप भव” *</div>
@@ -77,21 +83,26 @@ function App() {
       </div>
 
       {/* Navigation menu */}
-      <nav className="nav-bar">
-        <button>Home</button>
-        <button>About Us</button>
-        <button>People</button>
-        <button>Event</button>
-        <button>Gallery</button>
-        <button>Contact Us</button>
-      </nav>
+      <div className="navigation">
+        <nav className={`nav-bar ${view} ${menuOpen?'open':'closed'}`}>
+            <button>Home</button>
+            <button>About Us</button>
+            <button>People</button>
+            <button>Event</button>
+            <button>Gallery</button>
+            <button>Contact Us</button>
+        </nav>
+        {view=="mobile"?<button className={`hamburger-menu ${menuOpen?'open':'closed'}`} onClick={()=>setMenuOpen(!menuOpen)}>
+          <span></span><span></span><span></span>
+        </button>:null}
+      </div>
 
       {/* Main content area */}
       <main className="main-layout">
         {/* Left links */}
           <div>
-            <div className="side-header">Link</div>
-            <aside className="side-box">
+            <div className="side-header" onClick={()=>setLinkOpen({left:!linksOpen.left,right:linksOpen.right})}>Link</div>
+            <aside className={`side-box ${linksOpen.left || view=="web"?'open':'closed'}`}>
                 <ul>
                   <li><a href="https://www.deekshabhoomi.org/" target='_blank'>Deeksha Bhumi Nagpur</a></li>
                   <li><a href="?">Chaitybhumi Mumbai</a></li>
@@ -106,17 +117,34 @@ function App() {
             </aside>
           </div>
 
+          {/* Right links */}
+        {view=="mobile"?<div>
+          <div className="side-header" onClick={()=>setLinkOpen({left:linksOpen.left,right:!linksOpen.right})}>Link</div>
+          <aside className={`side-box ${linksOpen.right || view=="web"?'open':'closed'}`}>
+            <ul>
+              <li><a href="?">Dragon Palace Kamptee</a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </aside>
+        </div>:null}
+
         {/* Center photo box */}
         <section className="photo-box">
           <Carousel3Items items={carouselItems} autoSlide={true} slideInterval={4000} />
         </section>
 
         {/* Right links */}
-        <div>
-            <div className="side-header">Link</div>
-          <aside className="side-box">
+        <div style={{display:view=="web"?"block":"none"}}>
+          <div className="side-header" onClick={()=>setLinkOpen({left:linksOpen.left,right:!linksOpen.right})}>Link</div>
+          <aside className={`side-box ${linksOpen.right || view=="web"?'open':'closed'}`}>
             <ul>
-              <li><a href="?">Dragan Palace Kampati</a></li>
+              <li><a href="?">Dragon Palace Kamptee</a></li>
               <li></li>
               <li></li>
               <li></li>

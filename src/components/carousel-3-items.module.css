@@ -141,7 +141,7 @@
 
 
   .slide {
-    flex: 0 0 calc(100% - 12px);
+    flex: 0 0 calc(100%);
   }
 
   .navButton {
