@@ -38,8 +38,8 @@ export function ActivitySection() {
       <div className={styles.container}>
 
         <div className={styles.containerHead}>
-          <select name="year_filter" id="">
-            <option value="" disabled selected>Year</option>
+          <select name="year_filter" id="" value={"2025-26"}>
+            <option value="">Year</option>
             <option value="2025-26">2025-26</option>
           </select>
         </div>

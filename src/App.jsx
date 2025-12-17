@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="app">
       {/* Top blue header */}
-      <header className="top-header">
+      <header id='home' className="top-header">
         <div className="logo-box">
           <img src="/logo_left.jpg" alt="" />
         </div>
@@ -79,12 +79,12 @@ function App() {
       {/* Navigation menu */}
       <div className="navigation">
         <nav className={`nav-bar ${view} ${menuOpen?'open':'closed'}`}>
-            <button>Home</button>
-            <button>About Us</button>
-            <button>People</button>
-            <button>Event</button>
-            <button>Gallery</button>
-            <button>Contact Us</button>
+            <a href='#home'>Home</a>
+            <a href='#about'>About Us</a>
+            <a href='#people'>People</a>
+            <a href='#events'>Events</a>
+            <a href='#gallery'>Gallery</a>
+            <a href='#contact'>Contact Us</a>
         </nav>
         {view=="mobile"?<button className={`hamburger-menu ${menuOpen?'open':'closed'}`} onClick={()=>setMenuOpen(!menuOpen)}>
           <span></span><span></span><span></span>

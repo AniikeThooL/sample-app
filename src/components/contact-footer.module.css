@@ -100,7 +100,12 @@
   font-size: 14px;
   color: #adb5bd;
 }
-
+.contactItem img{
+  width: 18px;
+}
+.contactItem .contactNumber{
+  margin-bottom: .5rem;
+}
 .contactItem svg {
   margin-top: 2px;
   flex-shrink: 0;

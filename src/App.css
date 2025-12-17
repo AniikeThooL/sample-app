@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -125,16 +129,18 @@ nav.nav-bar.mobile{
 nav.nav-bar.mobile.open{
   max-height: 400px;
 }
-.nav-bar button,
+.nav-bar a,
 .hamburger-menu{
   background-color: #3366ff;
   border: 1px solid #003399;
   color: rgb(0, 0, 0);
   padding: 10px 24px;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
-.nav-bar button:hover {
+.nav-bar a:hover {
   background-color: #003399;
 }
 .hamburger-menu{
@@ -182,7 +188,7 @@ nav.nav-bar.mobile.open{
   background-color: #6699ff;
   max-height: 1000px;
   overflow-y: hidden;
-  transition: .8s ease-in-out;
+  transition: .4s ease-in-out;
 }
 .side-box.open{
   max-width: 800px;

@@ -3,7 +3,7 @@
 export const People = ()=>{
 
     return (
-        <div className="container">
+        <div id="people" className="container">
             <h1>People</h1>
             <table className="people_table">
                 <tbody>

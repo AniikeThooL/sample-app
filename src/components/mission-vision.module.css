@@ -84,10 +84,11 @@
   flex-wrap: wrap;
 }
 .president_image{
-  flex: 1 1 300px;
+  flex: 0 1 300px;
   width: 100%;
   height: 400px;
+    object-fit: cover;
 }
 .president_bio{
-  flex: 1 1 700px;
+  flex: 1 1 300px;
 }

@@ -13,7 +13,7 @@ export const Events = ()=>{
     },[]);
 
     return(
-        <section className="container events">
+        <section id="events" className="container events">
             <h1>Events</h1>
 
             <div className="containerHead">
