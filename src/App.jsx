@@ -109,14 +109,9 @@ function App() {
           <div className="side-header" onClick={()=>setLinkOpen({left:linksOpen.left,right:!linksOpen.right})}>Link</div>
           <aside className={`side-box ${linksOpen.right || view=="web"?'open':'closed'}`}>
             <ul>
-              <li><a href="?">Dragon Palace Kamptee</a></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li><a href="https://asi.nic.in/pages/WorldHeritageBuddhistMonumentsatSanchi" target='_blank'>Sachi Stupa, MP</a></li>
+              <li><a href="https://www.globalpagoda.org/" target='_blank'>Pagoda Temple, Mumbai </a></li>
+              {/* <li><a href="https://kushinagar.nic.in/tourist-place/mahanirvana-stupa/" target='_blank'>Kushinagar </a></li> */}
             </ul>
           </aside>
         </div>:null}

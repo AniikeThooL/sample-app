@@ -61,6 +61,7 @@
   font-size: 16px;
   color: #495057;
   line-height: 1.6;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -91,4 +92,5 @@
 }
 .president_bio{
   flex: 1 1 300px;
+  text-align: justify;
 }
