@@ -8,7 +8,7 @@ export const President = ()=>{
         <section id="about" className={styles.section}>
             <h2 className={styles.title}>About Us</h2>
             <div className={styles.president_grid}>
-                <img className={styles.president_image} src="/president.png" alt="" />
+                <img className={styles.president_image} src="/president.jpg" alt="" />
                 <div className={styles.president_bio}>
                     <h1>President </h1>
                     <h2 className={styles.subtitle}>Dr. Dilip Govinda Patil</h2>
