@@ -12,7 +12,7 @@ const view = window.innerHeight<window.innerWidth?"web":"mobile";
 function App() {
   const carouselItems = [
     {
-      image: "/deekshabhoomi.jpg",
+      image: "/Deekshabhoomi.jpg",
       title: "Daily App - Task Management",
     },
     {
