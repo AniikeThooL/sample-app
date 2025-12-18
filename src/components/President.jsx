@@ -12,7 +12,8 @@ export const President = ()=>{
                 <div className={styles.president_bio}>
                     <h1>President </h1>
                     <h2 className={styles.subtitle}>Dr. Dilip Govinda Patil</h2>
-                    <p>The Buddhist Network Social and Educational Institution was 
+                    <p>
+                        The Buddhist Network Social and Educational Institution was 
                         established on 5th April 2025.  I, Dr. Dilip Govinda Patil, as the 
                         President of this noble Institution believe that true progress 
                         begins when compassion and wisdom walk hand in hand. 
@@ -34,7 +35,7 @@ export const President = ()=>{
                         engaging in social and educational development, as well as to propagate and promote the 
                         thoughts and works of these great personalities. Furthermore, the organization aims to realize 
                         the dreams envisioned by these leaders by working across social, educational, cultural, 
-                        religious, and professional domains, ensuring the holistic progress of every section of society. 
+                        religious, and professional domains, ensuring the holistic progress of every section of society.<br />  
                         At present, the organization is in its initial stage of development. However, we are confident 
                         that in the future, the efforts and initiatives of the Buddhist Network Social and Educational 
                         Institution will serve as a source of inspiration for the coming generations. With the 
@@ -45,11 +46,11 @@ export const President = ()=>{
                         Bendle Sir) Guides, and well-wishers, as well as the active participation of the community, 
                         this vision will surely be realized.<br /> 
                         With sincere faith, I express my gratitude and extend my best wishes for a bright and 
-                        harmonious future for all. 
-                        Thank you! 
-                        Jai Bhim,   Namo Buddhaya !! 
-                        With Best Wishes and Warm Regards: 
-                        Dr. Dilip Govinda Patil 
+                        harmonious future for all.<br />  
+                        Thank you! <br /> 
+                        Jai Bhim,   Namo Buddhaya !! <br /> 
+                        With Best Wishes and Warm Regards: <br /> 
+                        Dr. Dilip Govinda Patil <br /> 
                         President 
                     </p>
                 </div>

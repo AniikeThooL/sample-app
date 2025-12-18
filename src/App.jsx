@@ -12,7 +12,7 @@ const view = window.innerHeight<window.innerWidth?"web":"mobile";
 function App() {
   const carouselItems = [
     {
-      image: "/DeekshaBhoomi.jpg",
+      image: "/deekshabhoomi.jpg",
       title: "Daily App - Task Management",
     },
     {
@@ -20,15 +20,15 @@ function App() {
       title: "Daily App - User Interface",
     },
     {
-      image: "/ChaityaBhoomi_gate.jpg",
+      image: "/chaityabhomigate.webp",
       title: "Daily App - Orange Theme",
     },
     {
-      image: "/Pagoda_temple.jpg",
+      image: "/pagoda_temple.jpg",
       title: "Daily App - Dark Mode",
     },
     {
-      image: "/Bhimakoregoan.jpg",
+      image: "/25BMBHIMAKOREGAON.jpg",
       title: "Daily App - Nature Theme",
     },
     {
@@ -64,13 +64,13 @@ function App() {
           <div className="marquee__item">* “बुद्धं शरणं गच्छामि  ।। धम्मं शरणं गच्छामि  ।। संघं शरणं गच्छामि” *</div>
           <div className="marquee__item">* “प्रज्ञा, शील, करुणा” *</div>
           <div className="marquee__item">* “अत्त दीप भव” *</div>
-          <div className="marquee__item">“भवतु सब्ब”</div>
+          <div className="marquee__item">“भवतु सब्ब मंगलम”</div>
           
           <div className="marquee__track_duplicate"> {/* create duplicate of the above element to shadow it behind for scrolling effect  */}
             <div className="marquee__item">* “बुद्धं शरणं गच्छामि  ।। धम्मं शरणं गच्छामि  ।। संघं शरणं गच्छामि” *</div>
             <div className="marquee__item">* “प्रज्ञा, शील, करुणा” *</div>
             <div className="marquee__item">* “अत्त दीप भव” *</div>
-            <div className="marquee__item">“भवतु सब्ब”</div>
+            <div className="marquee__item">“भवतु सब्ब मंगलम”</div>
           </div>
         </div>
       </div>
