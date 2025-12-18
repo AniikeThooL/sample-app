@@ -12,7 +12,7 @@ const view = window.innerHeight<window.innerWidth?"web":"mobile";
 function App() {
   const carouselItems = [
     {
-      image: "/Deekshabhoomi.jpg",
+      image: "/DeekshaBhoomi.jpg",
       title: "Daily App - Task Management",
     },
     {
@@ -24,7 +24,7 @@ function App() {
       title: "Daily App - Orange Theme",
     },
     {
-      image: "/pagoda_temple.jpg",
+      image: "/Pagoda_temple.jpg",
       title: "Daily App - Dark Mode",
     },
     {
@@ -98,7 +98,7 @@ function App() {
             <div className="side-header" onClick={()=>setLinkOpen({left:!linksOpen.left,right:linksOpen.right})}>Link</div>
             <aside className={`side-box ${linksOpen.left || view=="web"?'open':'closed'}`}>
                 <ul>
-                  <li><a href="https://www.deekshabhoomi.org/" target='_blank'>Deeksha Bhumi, Nagpur</a></li>
+                  <li><a href="https://www.deekshabhoomi.org/" target='_blank'>DeekshaBhoomi, Nagpur</a></li>
                   <li><a href="https://bodhgayatemple.com/" target='_blank'>Bodh Gaya, Bihar</a></li>                
                 </ul>
             </aside>
