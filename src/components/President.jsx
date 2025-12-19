@@ -46,12 +46,12 @@ export const President = ()=>{
                         Bendle Sir) Guides, and well-wishers, as well as the active participation of the community, 
                         this vision will surely be realized.<br /> 
                         With sincere faith, I express my gratitude and extend my best wishes for a bright and 
-                        harmonious future for all.<br />  
+                        harmonious future for all.<br />  <br />
                         Thank you! <br /> 
-                        Jai Bhim,   Namo Buddhaya !! <br /> 
-                        With Best Wishes and Warm Regards: <br /> 
-                        Dr. Dilip Govinda Patil <br /> 
-                        President 
+                        <strong>Jai Bhim,   Namo Buddhaya !! </strong><br /> 
+                        <strong>With Best Wishes and Warm Regards: </strong><br /> 
+                        <strong>Dr. Dilip Govinda Patil </strong><br /> 
+                        <strong>President </strong>
                     </p>
                 </div>
             </div>
