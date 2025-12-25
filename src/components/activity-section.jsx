@@ -5,31 +5,40 @@ export function ActivitySection() {
   const team = [
     {
       id: 1,
-      name: "Sarah Anderson",
-      role: "Chief Executive Officer",
-      bio: "Visionary leader with 20+ years in strategy and innovation",
       image: "/gallery_1.jpg",
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Chief Technology Officer",
-      bio: "Tech innovator passionate about transforming businesses through technology",
       image: "/gallery_2.jpg",
     },
     {
       id: 3,
-      name: "Emma Rodriguez",
-      role: "Head of Operations",
-      bio: "Operations expert committed to operational excellence and growth",
       image: "/gallery_3.jpg",
     },
     {
+      id: 4,
+      image: "/gallery_4.jpg",
+    },{
       id: 5,
-      name: "David Kumar",
-      role: "Head of Marketing",
-      bio: "Marketing strategist focused on building meaningful brand connections",
       image: "/gallery_5.jpg",
+    },{
+      id: 6,
+      image: "/gallery_6.jpeg",
+    },{
+      id: 7,
+      image: "/gallery_7.jpeg",
+    },{
+      id: 8,
+      image: "/gallery_8.jpeg",
+    },{
+      id: 9,
+      image: "/gallery_9.jpeg",
+    },{
+      id: 10,
+      image: "/gallery_10.jpeg",
+    },{
+      id: 11,
+      image: "/gallery_11.jpeg",
     },
   ]
 
