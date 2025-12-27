@@ -1,26 +1,8 @@
+import { Link } from "react-router"
 import styles from "./contact-footer.module.css"
 
 export default function ContactFooter() {
-  // const quickLinks1 = [
-  //   { label: "Academics", href: "#" },
-  //   { label: "Academics", href: "#" },
-  //   { label: "Career/Counseling Cell", href: "#" },
-  //   { label: "Teacher Aid Fund", href: "#" },
-  //   { label: "Right To Information", href: "#" },
-  //   { label: "Disclaimer", href: "#" },
-  //   { label: "Privacy Policy", href: "#" },
-  // ]
-
-  // const quickLinks2 = [
-  //   { label: "Academics", href: "#" },
-  //   { label: "Academics", href: "#" },
-  //   { label: "Career/Counseling Cell", href: "#" },
-  //   { label: "Teacher Aid Fund", href: "#" },
-  //   { label: "Right To Information", href: "#" },
-  //   { label: "Disclaimer", href: "#" },
-  //   { label: "Privacy Policy", href: "#" },
-  // ]
-
+  
   return (
   <div id="contact" style={{marginTop:"40px"}}>
     <footer className={styles.footer}>
@@ -37,19 +19,19 @@ export default function ContactFooter() {
               <h4 className={styles.columnTitle}>Quick Links</h4>
               <ul className={styles.links}>
                 <li>
-                  <a href="#home">Home</a>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li>
-                  <a href="#about">About Us</a>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <a href="#people">People</a>
+                  <Link to="/people">People</Link>
                 </li>
                 <li>
-                  <a href="#events">Events</a>
+                  <Link to="/events">Events</Link>
                 </li>
                 <li>
-                  <a href="#gallery">Gallery</a>
+                  <Link to="/gallery">Gallery</Link>
                 </li>
               </ul>
             </div>

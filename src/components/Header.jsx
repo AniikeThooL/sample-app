@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 const view = window.innerHeight<window.innerWidth?"web":"mobile";
 
@@ -44,11 +45,11 @@ export const Header = ()=>{
             {/* Navigation menu */}
             <div className="navigation">
                 <nav className={`nav-bar ${view} ${menuOpen?'open':'closed'}`}>
-                    <a href='#home'>Home</a>
-                    <a href='#about'>About Us</a>
-                    <a href='#people'>People</a>
-                    <a href='#events'>Events</a>
-                    <a href='#gallery'>Gallery</a>
+                    <Link to='/home'>Home</Link>
+                    <Link to='/about'>About Us</Link>
+                    <Link to='/people'>People</Link>
+                    <Link to='/events'>Events</Link>
+                    <Link to='/gallery'>Gallery</Link>
                     <a href='#contact'>Contact Us</a>
                 </nav>
                 {view=="mobile"?
